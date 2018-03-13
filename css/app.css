@@ -257,6 +257,31 @@ img {
 		opacity: 1;
 	}
 
+/* Totally stretching "as long as it works" */
+/* Shame on me */
+/* Please make this proper */
+#editable3 {}
+	#editable3 li {
+		position: relative;
+	}
+
+	#editable3 i {
+		-webkit-transition: opacity .2s;
+		transition: opacity .2s;
+		opacity: 0;
+		display: block;
+		cursor: pointer;
+		color: #c00;
+		top: 10px;
+		right: 40px;
+		position: absolute;
+		font-style: normal;
+	}
+
+	#editable3 li:hover i {
+		opacity: 1;
+	}
+
 
 #filter {}
 	#filter button {

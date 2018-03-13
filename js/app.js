@@ -113,6 +113,15 @@
 		}
 	});
 
+	var editableList3 = Sortable.create(byId('editable3'), {
+		group: 'same',
+		animation: 150,
+		filter: '.js-remove',
+		onFilter: function (evt) {
+			evt.item.parentNode.removeChild(evt.item);
+		}
+	});
+
 
 	byId('addUser').onclick = function () {
 		Ply.dialog('prompt', {
@@ -133,6 +142,17 @@
 			var el = document.createElement('li');
 			el.innerHTML = ui.data.name + '<i class="js-remove">✖</i>';
 			editableList2.el.appendChild(el);
+		});
+	};
+
+	byId('addUser3').onclick = function () {
+		Ply.dialog('prompt', {
+			title: 'Add',
+			form: { name: 'name' }
+		}).done(function (ui) {
+			var el = document.createElement('li');
+			el.innerHTML = ui.data.name + '<i class="js-remove">✖</i>';
+			editableList3.el.appendChild(el);
 		});
 	};
 
