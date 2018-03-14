@@ -190,6 +190,7 @@ img {
 
 	.block__list_tags {
 		padding-left: 30px;
+		max-width: 900px;
 	}
 
 	.block__list_tags:after {
@@ -199,11 +200,12 @@ img {
 	}
 		.block__list_tags li {
 			color: #fff;
+			font-size: 2em;
 			float: left;
 			margin: 8px 20px 10px 0;
 			padding: 5px 10px;
 			min-width: 10px;
-			background-color: #5F9EDF;
+			background-color: #7783D8;
 			text-align: center;
 		}
 			.block__list_tags li:first-child:first-letter {
