@@ -208,6 +208,21 @@ img {
 			background-color: #7783D8;
 			text-align: center;
 		}
+
+		.block__list_tags i {
+			-webkit-transition: opacity .2s;
+			transition: opacity .2s;
+			opacity: 0;
+			display: block;
+			cursor: pointer;
+			color: #c00;
+			top: 10px;
+			right: 40px;
+			position: absolute;
+			font-style: normal;
+		}
+
+
 			.block__list_tags li:first-child:first-letter {
 				text-transform: uppercase;
 			}
@@ -306,6 +321,28 @@ img {
 	#filter .block__list {
 		padding-bottom: 0;
 	}
+
+a.about {
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+
+
+	color: #FFFFFF;
+	text-decoration:  none;
+	top: 70px;
+	right: 30px;
+	position: absolute;
+}
+
+a.about:hover {
+	color: #A4A4A4;
+	top: 70px;
+	right: 30px;
+	position: absolute;
+}
 
 .drag-handle {
 	margin-right: 10px;
